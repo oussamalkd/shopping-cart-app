@@ -5,7 +5,7 @@
     <div class="logo">
       <h1>Shopping Cart</h1>
     </div>
-    <div class="side-bar-menu bg-yellow-400">
+    <div class="side-bar-menu">
       <ul>
         <li>
           <a href="">Dashboard</a>
@@ -15,5 +15,15 @@
         </li>
       </ul>
     </div>
+    <div class="side-bar-ations">
+      <ul>
+        <li>
+          <a href="">Dark</a>
+        </li>
+      </ul>
+    </div>
   </aside>
 </template>
+<style>
+@import '../../assets/css/layouts/sidebar.css';
+</style>
