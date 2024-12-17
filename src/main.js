@@ -11,6 +11,6 @@ app.use(router)
 
 app
   .use(axios, {
-    baseUrl: process.env.VUE_APP_API_URL,
+    baseUrl: import.meta.env.VITE_API_URL,
   })
   .mount('#app')

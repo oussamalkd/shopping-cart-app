@@ -7,8 +7,9 @@ const app = getCurrentInstance()
 const axios = app.appContext.config.globalProperties.$axios
 
 onMounted(async () => {
-  //const data = await $axios.get('/products')
-  //console.log(data)
+  const data = await axios.get('/products')
+  console.log(data)
+  console.log(import.meta.env.VITE_API_URL)
 })
 </script>
 
