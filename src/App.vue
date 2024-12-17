@@ -1,15 +1,10 @@
 <script setup>
-import { getCurrentInstance, inject, onMounted } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { onMounted } from 'vue'
 import SideBar from './components/layouts/SideBar.vue'
-
-const app = getCurrentInstance()
-const axios = app.appContext.config.globalProperties.$axios
+import { getProducts } from './api'
 
 onMounted(async () => {
-  const data = await axios.get('/products')
-  console.log(data)
-  console.log(import.meta.env.VITE_API_URL)
+  await getProducts()
 })
 </script>
 

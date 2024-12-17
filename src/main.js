@@ -9,8 +9,4 @@ const app = createApp(App)
 
 app.use(router)
 
-app
-  .use(axios, {
-    baseUrl: import.meta.env.VITE_API_URL,
-  })
-  .mount('#app')
+app.mount('#app')
