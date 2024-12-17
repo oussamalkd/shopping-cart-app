@@ -8,10 +8,10 @@
     <div class="side-bar-menu">
       <ul>
         <li>
-          <a href="">Dashboard</a>
+          <RouterLink to="/">Dashboard</RouterLink>
         </li>
         <li>
-          <a href="">Products</a>
+          <RouterLink to="products">Products</RouterLink>
         </li>
       </ul>
     </div>

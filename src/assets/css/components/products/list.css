@@ -1,0 +1,32 @@
+.table {
+  @apply min-w-full table-fixed rounded-xl border-collapse overflow-hidden;
+
+  thead {
+    @apply border-b  text-content uppercase bg-gray-100 rounded-xl;
+    tr {
+      th {
+        @apply tracking-wider uppercase font-semibold text-gray-700 text-xs text-center px-4 py-5 border-r border-gray-300;
+        &:first-child {
+          @apply sticky right-0 z-20;
+        }
+        &:last-child {
+          @apply border-r-0;
+        }
+      }
+    }
+  }
+
+  tbody {
+    @apply bg-white divide-gray-300 divide-y;
+    tr {
+      @apply duration-300 transition-colors;
+
+      td {
+        @apply text-sm p-4 whitespace-nowrap font-light text-center text-secondary;
+        &:first-child {
+          @apply sticky bg-white z-10 right-0;
+        }
+      }
+    }
+  }
+}
