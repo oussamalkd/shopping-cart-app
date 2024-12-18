@@ -1,0 +1,9 @@
+.pagination {
+  @apply w-full flex justify-center items-center gap-10 my-10;
+  button {
+    @apply inline-block bg-content text-secondary rounded px-5 py-2;
+    &:disabled {
+      @apply cursor-not-allowed bg-slate-200 text-content;
+    }
+  }
+}

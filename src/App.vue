@@ -1,11 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
 import SideBar from './components/layouts/SideBar.vue'
-import { getProducts } from './api'
-
-onMounted(async () => {
-  await getProducts()
-})
 </script>
 
 <template>

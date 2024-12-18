@@ -17,12 +17,23 @@
   }
 
   tbody {
-    @apply bg-white divide-gray-300 divide-y;
+    @apply divide-gray-300 divide-y bg-slate-50 text-content;
     tr {
       @apply duration-300 transition-colors;
+      &:hover {
+        @apply bg-slate-300 text-accent;
+      }
+
+      &.skeleton {
+        td {
+          .bar {
+            @apply h-2 rounded bg-slate-300 inline-flex justify-center items-center w-full;
+          }
+        }
+      }
 
       td {
-        @apply text-sm p-4 whitespace-nowrap font-light text-center text-secondary;
+        @apply text-sm p-4 whitespace-nowrap font-light text-center text-inherit;
         &:first-child {
           @apply sticky bg-white z-10 right-0;
         }
